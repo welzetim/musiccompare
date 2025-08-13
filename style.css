@@ -1,49 +1,37 @@
 body {
-    background-color: #121212;
-    color: white;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #1DB954;
-    padding: 1rem;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-family: Arial, sans-serif;
 }
 
 button {
-    background-color: #1DB954;
-    color: white;
-    border: none;
     padding: 10px 20px;
-    margin: 20px;
-    border-radius: 25px;
-    font-size: 1.2rem;
+    font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
-button:hover {
-    background-color: #17a047;
-}
-
-#top-artists {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
-.artist {
-    background: #181818;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.artist img {
+.modal {
+    display: none; /* versteckt */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
     width: 100%;
-    border-radius: 10px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 24px;
+    cursor: pointer;
 }
