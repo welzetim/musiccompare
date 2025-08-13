@@ -7,6 +7,7 @@ document.getElementById("login-btn").addEventListener("click", () => {
     window.location = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=user-top-read`;
 });
 
+
 function getTokenFromUrl() {
     const hash = window.location.hash
         .substring(1)
@@ -45,4 +46,3 @@ const token = getTokenFromUrl();
 if (token) {
     getTopArtists(token);
 }
-
