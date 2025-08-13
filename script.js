@@ -1,5 +1,5 @@
-const CLIENT_ID = fc868b53f27848d092df840e981fd61e;
-const REDIRECT_URI = const REDIRECT_URI = "https://welzetim.github.io/musiccompare/";
+const CLIENT_ID = "fc868b53f27848d092df840e981fd61e";
+const REDIRECT_URI = "https://welzetim.github.io/musiccompare/";
 const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
 const RESPONSE_TYPE = "token";
 
